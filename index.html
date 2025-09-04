@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="./style.css">
+<script type="module" src="./script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title">Quiz App</h1>
+      <p class="subtitle">
+        All questions are visible. Your choices save while you work. Reset clears everything; 
+        Submit shows score and PASS/FAIL (70%).
+      </p>
+    </header>
+
+    <div class="toolbar">
+      <button id="resetBtn" type="button">Reset</button>
+      <button id="submitBtn" type="button">Submit</button>
+      <span id="saveHint" aria-live="polite"></span>
+    </div>
+
+    <section id="results"></section>
+
+
+    <main id="questions">
+        <!-- Q1 -->
+<article class="q" data-id="q1" data-type="mcq" data-answer="2">
+  <h3>What are the colors of the Palestinian flag?</h3>
+  <ul class="opts">
+    <li><label><input type="radio" name="q1" value="0"> Red, Blue, Yellow</label></li>
+    <li><label><input type="radio" name="q1" value="1"> Green, Orange, Purple</label></li>
+    <li><label><input type="radio" name="q1" value="2"> Black, White, Green, Red</label></li>
+    <li><label><input type="radio" name="q1" value="3"> Black, White, Blue</label></li>
+  </ul>
+</article>
+
+<!-- Q2 -->
+<article class="q" data-id="q2" data-type="mcq" data-answer="0">
+  <h3>What is the capital of Palestine?</h3>
+  <ul class="opts">
+    <li><label><input type="radio" name="q2" value="0"> Jerusalem</label></li>
+    <li><label><input type="radio" name="q2" value="1"> Ramallah</label></li>
+    <li><label><input type="radio" name="q2" value="2"> Gaza City</label></li>
+    <li><label><input type="radio" name="q2" value="3"> Nablus</label></li>
+  </ul>
+</article>
+
+<!-- Q3 -->
+<article class="q" data-id="q3" data-type="tf" data-answer="0">
+  <h3>The Palestinian flag has four colors</h3>
+  <ul class="opts">
+    <li><label><input type="radio" name="q3" value="0"> True</label></li>
+    <li><label><input type="radio" name="q3" value="1"> False</label></li>
+  </ul>
+</article>
+
+<!-- Q4 -->
+<article class="q" data-id="q4" data-type="mcq" data-answer="1">
+  <h3>Which food is very famous in Palestine?</h3>
+  <ul class="opts">
+    <li><label><input type="radio" name="q4" value="0"> Sushi</label></li>
+    <li><label><input type="radio" name="q4" value="1"> Musakhan</label></li>
+    <li><label><input type="radio" name="q4" value="2"> Pizza</label></li>
+    <li><label><input type="radio" name="q4" value="3"> Tacos</label></li>
+  </ul>
+</article>
+
+<!-- Q5 -->
+<article class="q" data-id="q5" data-type="tf" data-answer="0">
+  <h3>Falafel is a popular food in Palestine.</h3>
+  <ul class="opts">
+    <li><label><input type="radio" name="q5" value="0"> True</label></li>
+    <li><label><input type="radio" name="q5" value="1"> False</label></li>
+  </ul>
+</article>
+
+<!-- Q6 -->
+<article class="q" data-id="q6" data-type="mcq" data-answer="2">
+  <h3>Which sea is next to Gaza?</h3>
+  <ul class="opts">
+    <li><label><input type="radio" name="q6" value="0"> Dead Sea</label></li>
+    <li><label><input type="radio" name="q6" value="1"> Red Sea</label></li>
+    <li><label><input type="radio" name="q6" value="2"> Mediterranean Sea</label></li>
+    <li><label><input type="radio" name="q6" value="3"> Black Sea</label></li>
+  </ul>
+</article>
+
+<!-- Q7 -->
+<article class="q" data-id="q7" data-type="mcq" data-answer="1">
+  <h3>Which city is known as the "Bride of the Sea" in Palestine?</h3>
+  <ul class="opts">
+    <li><label><input type="radio" name="q7" value="0"> Gaza</label></li>
+    <li><label><input type="radio" name="q7" value="1"> Jaffa</label></li>
+    <li><label><input type="radio" name="q7" value="2"> Bethlehem</label></li>
+    <li><label><input type="radio" name="q7" value="3"> Hebron</label></li>
+  </ul>
+</article>
+
+<!-- Q8 -->
+<article class="q" data-id="q8" data-type="tf" data-answer="1">
+  <h3>Ramallah is the capital of Palestine.</h3>
+  <ul class="opts">
+    <li><label><input type="radio" name="q8" value="0"> True</label></li>
+    <li><label><input type="radio" name="q8" value="1"> False</label></li>
+  </ul>
+</article>
+
+<!-- Q9 -->
+<article class="q" data-id="q9" data-type="mcq" data-answer="3">
+  <h3>Which city is famous for the Church of the Nativity?</h3>
+  <ul class="opts">
+    <li><label><input type="radio" name="q9" value="0"> Hebron</label></li>
+    <li><label><input type="radio" name="q9" value="1"> Jenin</label></li>
+    <li><label><input type="radio" name="q9" value="2"> Gaza</label></li>
+    <li><label><input type="radio" name="q9" value="3"> Bethlehem</label></li>
+  </ul>
+</article>
+
+<!-- Q10 -->
+<article class="q" data-id="q10" data-type="tf" data-answer="0">
+  <h3>Olive trees are very common in Palestine.</h3>
+  <ul class="opts">
+    <li><label><input type="radio" name="q10" value="0"> True</label></li>
+    <li><label><input type="radio" name="q10" value="1"> False</label></li>
+  </ul>
+</article>
+
+
+    </main>
+  </div>
+</body>
+</html>
